@@ -5,6 +5,9 @@ import (
     "./routes"
 )
 
+//Port Const
+const port string = ":80";
+
 //Function for Serving the Content
 func serveSingleResource(pattern string, filename string) {
     http.HandleFunc(pattern, func(w http.ResponseWriter, r *http.Request) {
@@ -26,5 +29,5 @@ func main() {
     http.Handle("/static/", http.StripPrefix("/static", http.FileServer(http.Dir("./static/"))))
 
 
-    http.ListenAndServe(":8080", nil)
+    http.ListenAndServe(port, nil)
 }
