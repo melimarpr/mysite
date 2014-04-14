@@ -2,11 +2,11 @@ package main
 
 import (
     "net/http"
-    "./routes"
+    "github.com/mmarquezpr/mysite/routes"
 )
 
 //Port Const
-const port string = ":8080";
+const port string = ":80";
 
 //Function for Serving the Content
 func serveSingleResource(pattern string, filename string) {

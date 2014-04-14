@@ -6,7 +6,7 @@ import(
 )
 
 //Global Var for Templates
-var templates = template.Must(template.ParseFiles("./views/index.html"))
+var templates = template.Must(template.ParseFiles("views/index.html"))
 
 
 func RootHandler(w http.ResponseWriter, r *http.Request) {
