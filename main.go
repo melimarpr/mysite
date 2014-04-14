@@ -2,7 +2,7 @@ package main
 
 import (
     "net/http"
-    "github.com/mmarquezpr/mysite/routes"
+    "./routes"
 )
 
 //Port Const
