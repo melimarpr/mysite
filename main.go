@@ -6,7 +6,7 @@ import (
 )
 
 //Port Const
-const port string = ":80";
+const port string = ":8080";
 
 //Function for Serving the Content
 func serveSingleResource(pattern string, filename string) {
